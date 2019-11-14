@@ -54,7 +54,7 @@ static {
 		String name=result.getName();
 		int status=result.getStatus();
 		if (status==1) {
-			Reporter.log("Pass", true);
+			Reporter.log("Pass", false);
 			//Excel.createFile(XL,SH);
 			Excel.report(name, XL, SH, 1, 0, status);
 			
